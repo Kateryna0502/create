@@ -22,100 +22,139 @@
   <body>
     <div class="container">
       <!-- Left form -->
-      <div class="form-box">
-        <h2>Create an Account</h2>
-
-        <div class="form-group">
-          <div class="line">
-            <label for="first-name" class="">First Name</label>
-            <input
-              type="text"
-              id="first-name"
-              name="first-name"
-              class="name-line"
-            />
+      <form action="">
+        <div class="form-box">
+          <h2>Create an Account</h2>
+          <div class="form-group">
+            <div class="line">
+              <label for="first-name" class="">First Name</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                class="name-line"
+              />
+            </div>
+            <div class="line">
+              <label for="last-name" class="">Last Name</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                class="name-line"
+              />
+            </div>
           </div>
-
-          <div class="line">
-            <label for="last-name" class="">Last Name</label>
-            <input
-              type="text"
-              id="last-name"
-              name="last-name"
-              class="name-line"
-            />
+          <div class="form-email">
+            <label for="email" class="">E-mail</label>
+            <input type="email" id="email" name="email" class="email-line" />
           </div>
-        </div>
-
-        <div class="form-email">
-          <label for="email" class="">E-mail</label>
-          <input type="email" id="email" name="email" class="email-line" />
-        </div>
-        <p class="note">We'll never share your email with anyone else.</p>
-
-        <div class="radio-group">
-          <label><input type="radio" name="gender" checked /> Male</label>
-          <label><input type="radio" name="gender" /> Female</label>
-        </div>
-
-        <div class="form-group">
-          <div class="line">
-            <label for="country" class="">Country</label>
-            <select id="country" name="country" class="name-line">
-              <option selected disabled hidden class="placeholder">
-                Select
-              </option>
-              <option value="">Ukraine</option>
-              <option value="">USA</option>
-              <option value="">Italy</option>
-            </select>
+          <p class="note">We'll never share your email with anyone else.</p>
+          <div class="radio-group">
+            <label><input type="radio" name="gender" checked /> Male</label>
+            <label><input type="radio" name="gender" /> Female</label>
           </div>
-
-          <div class="line">
-            <label for="city" class="">City</label>
-            <input type="city" id="" name="city" class="name-line-city" />
+          <div class="form-group">
+            <div class="line">
+              <label for="country" class="">Country</label>
+              <select id="country" name="country" class="name-line">
+                <option selected disabled hidden class="placeholder">
+                  Select
+                </option>
+                <option value="">Ukraine</option>
+                <option value="">USA</option>
+                <option value="">Italy</option>
+              </select>
+            </div>
+            <div class="line">
+              <label for="city" class="">City</label>
+              <input type="city" id="" name="city" class="name-line-city" />
+            </div>
           </div>
+          <button class="signup-btn">Sign Up</button>
+          <p class="terms">
+            By clicking the 'Sign Up' button, you confirm that you accept our
+            <br />
+            <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+          </p>
+          <hr />
+          <div class="login-link">Have an account? <a href="#">Log In</a></div>
         </div>
-
-        <button class="signup-btn">Sign Up</button>
-
-        <p class="terms">
-          By clicking the 'Sign Up' button, you confirm that you accept our
-          <br />
-          <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
-        </p>
-        <hr />
-        <div class="login-link">Have an account? <a href="#">Log In</a></div>
-      </div>
+      </form>
 
       <!-- Right form -->
-      <div class="form-box">
-        <h2>Profile</h2>
 
-        <div class="profile-pic">
-          <img src="https://via.placeholder.com/80" alt="Profile Pic" />
+      <form action="" class="second">
+        <div class="form-box">
+          <h2>Profile</h2>
+          <div class="profile">
+            <div class="profile-pic">
+              <img src="Image.png" alt="Profile Pic" />
+            </div>
+            <div class="flex">
+              <div class="upload-info">
+                <input type="text" class="cam" />
+                <span class="icon">
+                  <img src="camera.svg" class="img" alt="camera" />
+                </span>
+                <span class="icon">
+                  <img src="tresh.svg" class="delete" />
+                </span>
+                <span class="up">Up to 1 MB (300x300 px)</span>
+              </div>
+              <div>
+                <input type="text" class="reset" />
+              </div>
+            </div>
+          </div>
+          <div class="fields">
+            <div class="form-group">
+              <div class="line">
+                <label for="name" class="">Name</label>
+                <input type="name" id="" name="name" class="name-line-city" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="line">
+                <label for="emai" class="">E-mail</label>
+                <input type="email" id="" name="email" class="name-line-city" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="line">
+                <label for="country" class="">Country</label>
+                <select id="country" name="country" class="name-line">
+                  <option selected disabled hidden class="placeholder">
+                    Select
+                  </option>
+                  <option value="">Ukraine</option>
+                  <option value="">USA</option>
+                  <option value="">Italy</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="line">
+                <label for="city" class="">City</label>
+                <input type="city" id="" name="city" class="name-line-city" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="line">
+                <label for="zip" class="">Zip Code</label>
+                <input type="zip" id="" name="zip" class="name-line-city" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="line">
+                <label for="phone" class="">Phone Number</label>
+                <input type="phone" id="" name="phone" class="name-line-city" />
+              </div>
+            </div>
+          </div>
+          <button class="update-btn">Update</button>
         </div>
-        <div class="upload-info">Up to 1 MB (300x300 px)</div>
-
-        <div class="form-group">
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="E-mail" />
-        </div>
-
-        <div class="form-group">
-          <select>
-            <option>Select Country</option>
-          </select>
-          <input type="text" placeholder="City" />
-        </div>
-
-        <div class="form-group">
-          <input type="text" placeholder="Zip Code" />
-          <input type="text" placeholder="Phone Number" />
-        </div>
-
-        <button class="update-btn">Update</button>
-      </div>
+      </form>
     </div>
   </body>
 </html>
