@@ -157,7 +157,6 @@ button {
   line-height: 18px;
   text-align: center;
   letter-spacing: -0.1px;
-
   color: #969696;
 }
 
@@ -258,14 +257,20 @@ img {
   opacity: 0.7;
   width: 16px;
   height: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .upload-info .icon img {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
 }
 select .placeholder {
   color: #999;
+}
+
+select option.placeholder {
+  color: #888; /* сірий текст */
 }
 .fields {
   display: grid;
@@ -290,6 +295,7 @@ select .placeholder {
   letter-spacing: -0.01em;
   cursor: pointer;
   margin: 0;
+  align-items: center;
 }
 
 label:has(select)::after {
@@ -299,11 +305,4 @@ label:has(select)::after {
   left: 91%;
   background: #fff;
   pointer-events: none;
-}
-
-/* Адаптивність для мобільних */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
 }
